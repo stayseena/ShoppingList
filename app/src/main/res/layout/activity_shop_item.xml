@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ShopItemActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedBottom_toTopOf="@id/til_count"
+        app:layout_constrainedEnd_toEndOf="parent"
+        app:layout_constrainedStart_toStartOf="parent"
+        app:layout_constrainedTop_toTopOf="parent"
+        app:layout_constrainedVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="151dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="411dp"
+            android:layout_height="48dp"
+            android:hint="@string/name"
+            android:inpitType="textCapWords"
+            android:textColorHint="#616161"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="244dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedBottom_toTopOf="@id/save_button"
+        app:layout_constrainedEnd_toEndOf="parent"
+        app:layout_constrainedStart_toStartOf="parent"
+        app:layout_constrainedTop_toBottomOf="@+/til_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="293dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_count"
+            android:layout_width="414dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="92dp"
+            android:hint="@string/count"
+            android:inpitType="numbers"
+            android:textColorHint="#757575"
+            app:layout_constraintBottom_toTopOf="@id/save_button"
+            app:layout_constraintTop_toBottomOf="@+id/til_name"
+            app:layout_constraintVertical_bias="0.217"
+            tools:layout_editor_absoluteX="2dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constrainedBootom_toBottomOf="parent"
+        app:layout_constrainedEnd_toEndOf="parent"
+        app:layout_constrainedStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
