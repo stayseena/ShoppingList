@@ -15,7 +15,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#33B886FC"
+        android:background="#33BB86FC"
         android:orientation="horizontal"
         android:padding="16dp">
 
@@ -27,7 +27,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="Салфетки"/>
+            tools:text="Салфетки" />
 
         <TextView
             android:id="@+id/tv_count"
@@ -36,9 +36,8 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="1"/>
+            tools:text="1" />
 
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>
